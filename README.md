@@ -5,9 +5,6 @@
 
 ## 🖌️ Wireframe 🖌️
 [App wireframe on Figma](https://www.figma.com/file/FUgpsQkrbDUjriwx0UDaDw/NewsTrack-Wireframe-Draft-1?node-id=0%3A1)
-- InVision: Prototyping tool used to design the first rough draft wireframe
-- Figma: Web-graphics editor used to finalize UI proposal
-- Coolors: A color scheme generator used to create color palette
 
 
 ## 🔄 API 🔃
@@ -16,18 +13,18 @@ This project utilizes the following APIs:
 - [Google Maps] - Will be added soon
 
 
-## 💭 What's next? 💭
-* [ ] Add a Homepage
-* [ ] Add Contact us
-* [ ] Add Feedback form
-* [ ] Upgrade tabs
-* [ ] Add API Images of cities
+## 🗓 What's next? 💭
+These are some additional features we would like to add.
+>- Add investor and customer portal. 
+* Add Images of cities as the background of flash cards.
 
 
 ## 🔖 Resources 🔖
 1. [Coolors](https://coolors.co/) -Color Palette
 2. [Figma](https://www.figma.com/community) -UI Hi-Fi Wireframe
 3. [High Fidelity Tutorial](https://www.youtube.com/watch?v=DLXgLazAYG0&ab_channel=RisingKirin) -Used as a guideline for Lo-Fi and Hi-Fi
+4. [InVision](https://www.invisionapp.com/) -Prototyping tool used to design the first rough draft wireframe
+
 
 
 ## 🌠 Team 🌠
