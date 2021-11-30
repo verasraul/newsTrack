@@ -4,9 +4,7 @@
 
 
 ## Wireframe
-InVision
-Figma
-Coolors
+
 
 ## API
 This project will be completed using the following APIs:
@@ -15,8 +13,10 @@ This project will be completed using the following APIs:
 ## Aditional
 
 
-## Requirements
-
+## Resources
+InVision
+Figma
+Coolors
 
 ## Team
 
