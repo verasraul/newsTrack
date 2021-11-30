@@ -20,10 +20,11 @@ These are some additional features we would like to add.
 
 
 ## 🔖 Resources 🔖
-1. [Coolors](https://coolors.co/) -Color Palette
-2. [Figma](https://www.figma.com/community) -UI Hi-Fi Wireframe
-3. [High Fidelity Tutorial](https://www.youtube.com/watch?v=DLXgLazAYG0&ab_channel=RisingKirin) -Used as a guideline for Lo-Fi and Hi-Fi
-4. [InVision](https://www.invisionapp.com/) -Prototyping tool used to design the first rough draft wireframe
+NewsTrack app was created with the help of these resources
+1. [Coolors](https://coolors.co/)
+2. [Figma](https://www.figma.com/community)
+3. [High Fidelity Tutorial](https://www.youtube.com/watch?v=DLXgLazAYG0&ab_channel=RisingKirin)
+4. [InVision](https://www.invisionapp.com/)
 
 
 
