@@ -7,8 +7,9 @@
 
 
 ## API
-This project will be completed using the following APIs:
+This project utilizes the following APIs:
 
+https://newsdata.io/
 
 ## Aditional
 
