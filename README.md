@@ -54,13 +54,3 @@ NewsTrack app was created with the help of these resources
 | ----- | ------ |
 | [![LinkedIn](src/img/logos/linkedin-logo.svg)](https://www.linkedin.com/in/jenny-moncion-04535260/ "LinkedIn")   | [![LinkedIn](src/img/logos/linkedin-logo.svg)](https://www.linkedin.com/in/verasraul/ "LinkedIn") |
 | [![GitHub](src/img/logos/github-logo.svg)](https://github.com/didelma "didelma")  |  [![GitHub](src/img/logos/github-logo.svg)](https://github.com/verasraul)  |
-| more  |  more  |
-
-
-**Jenny Moncion**
-- [![LinkedIn](src/img/logos/linkedin-logo.svg)](https://www.linkedin.com/in/jenny-moncion-04535260/ "LinkedIn")
-- [![GitHub](src/img/logos/github-logo.svg)](https://github.com/didelma "didelma")
-
-**Raul Veras**
-- [![LinkedIn](src/img/logos/linkedin-logo.svg)](https://www.linkedin.com/in/verasraul/ "LinkedIn")
-- [![GitHub](src/img/logos/github-logo.svg)](https://github.com/verasraul)
