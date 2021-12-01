@@ -30,9 +30,6 @@ These are some additional features we would like to add.
 
 ## 🔄 API 🔃
 This project utilizes the following APIs:
-- [Newsdata](https://newsdata.io/) -News sources
-- [Google Maps] -(T.B.A)
-
 | NEWSDATA API | Google Maps API  |
 | ----- | ------ |
 | [![Newsdata logo](src/img/logos/newsdataioAPI-Logo-1.png)](https://newsdata.io/)   | [![Google Maps logo](src/img/logos/google-maps1.png)](https://cloud.google.com/maps-platform/)  |
@@ -52,10 +49,11 @@ NewsTrack app was created with the help of these resources
 
 
 ## 🌠 Team 🌠
+### Contact info
 **Jenny Moncion**
-- [LinkedIn](https://www.linkedin.com/in/jenny-moncion-04535260/ "LinkedIn")
+- [![LinkedIn](src/img/logos/linkedin-logo.svg)](https://www.linkedin.com/in/jenny-moncion-04535260/ "LinkedIn")
 - [GitHub](https://github.com/didelma "didelma")
 
 **Raul Veras**
-- [LinkedIn](https://www.linkedin.com/in/verasraul/ "LinkedIn")
+- [![LinkedIn](src/img/logos/linkedin-logo.svg)](https://www.linkedin.com/in/verasraul/ "LinkedIn")
 - [GitHub](https://github.com/verasraul)
