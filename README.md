@@ -21,7 +21,7 @@ This project utilizes the following APIs:
 
 | NEWSDATA API | Google Maps API  |
 | ----- | ------ |
-| [![Newsdata logo](src/img/logos/newsdataioAPI-Logo-1.png)](https://newsdata.io/)   | (https://cloud.google.com/maps-platform/)  |
+| [![Newsdata logo](src/img/logos/newsdataioAPI-Logo-1.png)](https://newsdata.io/)   | [![Google Maps logo](src/img/logos/google-maps1.png)](https://cloud.google.com/maps-platform/)  |
 | With "NEWSDATA" API developers can get live breaking news or search historical news data for the past 2 years from 3000 sources using NewsData.io API. Collect the data in JSON or Excel Formats.  |  Using Google Maps API we can create better experiences and improve operations with rich, detailed geospatial data, helpful mapping tools, and industry-leading reliability.   |
 | more  |  more  |
 
@@ -33,7 +33,7 @@ NewsTrack app was created with the help of these resources
 2. [Figma](https://www.figma.com/community)
 3. [High Fidelity Tutorial](https://www.youtube.com/watch?v=DLXgLazAYG0&ab_channel=RisingKirin)
 4. [InVision](https://www.invisionapp.com/)
-5. [NEWSDATA.io Docs] (https://newsdata.io/docs)
+5. [NEWSDATA Docs](https://newsdata.io/docs)
 
 
 
