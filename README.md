@@ -6,7 +6,6 @@
 
 
 ## 📌 Features 📌
-- User Auth(Sign in/Sign up/Auth view)
 - CRUD Operations
 - Search feature (search news by city or zip-code)
 - View news reports from multiple sources in a single page.
@@ -27,6 +26,7 @@ This project utilizes the following APIs:
 
 ## 🗓 What's next? 💭
 These are some additional features we would like to add:
+- User Auth(Sign in/Sign up/Auth view)
 - Add investor and customer portals. 
 - Add backgrounds to flash cards.
 - Add ability for users to curate headlines based on topics of interests. 
