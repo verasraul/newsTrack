@@ -28,6 +28,7 @@ body{
   background-color: #FEF7E5;
   display: flex;
   flex-direction: column;
+  min-width: 300px;
 }
 
 .banner{
@@ -43,7 +44,7 @@ width: 100%;
 display: flex; 
 }
 
-nav{
+.section2-nav-bar{
   display: flex;
   width: 100%;
   background: var(--nav);
@@ -53,24 +54,24 @@ nav{
   padding: 15px 30px;
 }
 
-nav .logo{
-  font-size: 35px;
+.logo{
+  font-size: 45px;
   font-family: '28_days_laterregular';
   cursor: pointer;
 }
 
-nav ol{
+ol{
   display: flex;
   list-style: none;
   margin: auto 0;
 }
 
-nav ol li{
+ol li{
   margin: 0 px;
   font-weight: bold;
 }
 
-nav ol li a{
+ol li a{
   color: #fff;
   font-size: 20px;
   text-decoration: none;
@@ -79,18 +80,12 @@ nav ol li a{
   padding: 5px 10px;
 }
 
-nav ol li:hover a{
+ol li:hover a{
   background: #fff;
   color: #BD0008;
 }
 
-.left, .right{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-section .search{
+section .section3-search{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +93,7 @@ section .search{
   padding: 50px 10px;
 }
 
-section .search input{
+section .section3-search input{
   border-radius: 3px;
   outline: none;
   background: #FEF7E5;
@@ -109,7 +104,7 @@ section .search input{
   border-radius: 6px;
 }
 
-section .search .search-bt{
+section .section3-search .search-bt{
   text-align: center;
   color: #fff;
   font-size: 20px;
@@ -120,54 +115,57 @@ section .search .search-bt{
   font-weight: bold;
 }
 
-nav .search span{
-  height: 100%;
-  color: blue;
-  font-size: 20px;
-  background: yellow;
-  height: 100%;
-  padding: 8px;
-  position: relative;
-  cursor: pointer;
-  z-index: 1;
-}
-
-nav .search span::hover{
-  color: #FEF7E5;
-}
-
-nav .search span::after{
-  height: 100%;
-  width: 0%;
-  content: '';
-  background: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  transition: 0.3;
-}
-
-nav.search span:hover::after{
-  width: 100%;
-}
-
-nav .bar{
+/* .bar{
   position: relative;
   margin: auto;
   display: 0;
 }
 
-nav .bar span{
+.bar span{
   position: absolute;
   color: #fff;
   font-size: 25px;
-}
+} */
 
 input[type="checkbox"]{
   -webkit-appearance: none;
   display: none;
 }
+
+.section4-flashcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* max-width: 80%; */
+  margin: auto;
+  gap: 10px 10px;
+  max-height: 50%;
+  padding: 20px 8px;
+
+}
+
+.card{
+  width: 300px;
+  height: 350px;
+  background-color: #3d9aed;
+  /* margin: 100px auto; */
+  min-width: 120px;
+  max-width: 25%;
+}
+
+/* Footer */
+  
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  justify-content: center;
+  background: #D03C3C;
+  color: #FFFFFF;
+  font-size: 22px;
+  }
 
 @media only screen and (max-width: 1250px) {
   nav{
@@ -232,20 +230,7 @@ input[type="checkbox"]{
   }
 }
 
- 
 
-/* Footer */
-  
-footer {
-  height: 80px;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  justify-content: center;
-  background: #D03C3C;
-  color: #FFFFFF;
-  font-size: 14px;
-  }
 /*
 .img-banner{
   display: none;
