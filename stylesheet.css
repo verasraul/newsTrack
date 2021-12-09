@@ -54,24 +54,24 @@ display: flex;
   padding: 15px 30px;
 }
 
-.logo{
+nav .logo{
   font-size: 45px;
   font-family: '28_days_laterregular';
   cursor: pointer;
 }
 
-ol{
+nav ol{
   display: flex;
   list-style: none;
   margin: auto 0;
 }
 
-ol li{
+nav ol li{
   margin: 0 px;
   font-weight: bold;
 }
 
-ol li a{
+nav ol li a{
   color: #fff;
   font-size: 20px;
   text-decoration: none;
@@ -80,10 +80,16 @@ ol li a{
   padding: 5px 10px;
 }
 
-ol li:hover a{
+nav ol li:hover a{
   background: #fff;
   color: #BD0008;
 }
+
+/* .left, .right{ 
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}*/
 
 section .section3-search{
   display: flex;
@@ -115,17 +121,49 @@ section .section3-search .search-bt{
   font-weight: bold;
 }
 
-/* .bar{
+/* nav .search span{
+  height: 100%;
+  color: blue;
+  font-size: 20px;
+  background: yellow;
+  height: 100%;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+} 
+
+nav .search span::hover{
+  color: #FEF7E5;
+}
+
+nav .search span::after{
+  height: 100%;
+  width: 0%;
+  content: '';
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.3;
+}
+
+nav.search span:hover::after{
+  width: 100%;
+}*/
+
+nav .bar{
   position: relative;
   margin: auto;
   display: 0;
 }
 
-.bar span{
+nav .bar span{
   position: absolute;
   color: #fff;
   font-size: 25px;
-} */
+}
 
 input[type="checkbox"]{
   -webkit-appearance: none;
@@ -147,10 +185,11 @@ input[type="checkbox"]{
 
 .card{
   width: 300px;
-  height: 350px;
+  height: 150px;
   background-color: #3d9aed;
   /* margin: 100px auto; */
   min-width: 120px;
+  
   max-width: 25%;
 }
 
