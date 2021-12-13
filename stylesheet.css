@@ -1,0 +1,259 @@
+:root{
+  --backgd: #FEF7E5;
+  --logo: #231F20;
+  --aboutusText: #FEF7E5;
+  --aboutBox: #D03C3C;
+  --Box: #BD0008;
+  --signUpText: #fff;
+  --nav: #F22727;
+  --card1: #FF757E;
+  --card2: #3D9AED;
+  --card3: #77C79E;
+  --card4: #FAC360;
+}
+
+@font-face {
+  font-family: '28_days_laterregular';
+  src: url('28_days_later-webfont.woff2') format('woff2'),
+       url('28_days_later-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #FEF7E5;
+}
+
+/* Banner */
+.banner{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: #FEF7E5;
+}
+
+#banner-image{
+margin: 0 auto;
+/* width: 100%; */
+display: flex; 
+}
+
+/* Navigation bar */
+.section2-nav-bar{
+  display: flex;
+  width: 100%;
+  background: #F22727;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo{
+  font-size: 45px;
+  font-family: '28_days_laterregular';
+  cursor: pointer;
+}
+
+nav ol{
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ol li{
+  margin: 0 px;
+  font-weight: bold;
+}
+
+nav ol li a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+nav ol li:hover a{
+  background: #fff;
+  color: #BD0008;
+}
+
+/* Search */
+.section3-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  padding: 50px 10px;
+}
+
+.section3-search input{
+  outline: none;
+  background: #FEF7E5;
+  width: 817px;
+  height: 57px;
+  line-height: 57px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.section3-search .search-bt{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  background: #BD0008;
+  border-radius: 10px;
+  height: 57px;
+  width: 100px;
+  font-weight: bold;
+}
+
+nav .bar{
+  position: relative;
+  margin: auto;
+  display: 0;
+}
+
+nav .bar span{
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+}
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  display: none;
+}
+
+
+/* FlashCards */
+.section4-flashcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* max-width: 80%; */
+  margin: auto;
+  gap: 10px 10px;
+  max-height: 50%;
+  padding: 20px 8px;
+}
+
+.card{
+  width: 300px;
+  height: 350px;
+  background-color: #3d9aed;
+  /* margin: 100px auto; */
+  min-width: 120px;
+  max-width: 25%;
+}
+
+#card2{
+  background-color: #ff757e;
+}
+
+#card3{
+  background-color: #77C79E;
+}
+
+#card4{
+  background-color: #FAC360;
+}
+
+/* About us */
+.section5-aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #D03C3C;
+  margin: auto;
+  padding: 50px 10px;
+  /* width: 100%; */
+}
+
+h2{
+  font-size: 48px;
+  color: #FEF7E5;
+}
+
+p{
+  font-size: 20px;
+  color: #FEF7E5;
+  width: 70%;
+}
+
+/* Sign up */
+.section6-signUp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 10px;
+}
+
+/* Footer */
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D03C3C;
+  color: #FFFFFF;
+  font-size: 22px;
+  text-align: center;
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+/* Banner */
+.banner{
+  display: flex;
+  height: 106px;
+  width: 375px;
+  padding: 0;
+  background-color: #FEF7E5;
+}
+#banner-image{
+margin: 0 auto;
+/* width: 100%; */
+display: flex; 
+}
+  .section2-nav-bar{
+    width: 100%;
+  }
+
+  .section4-flashcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* max-width: 80%; */
+    margin: auto;
+    gap: 10px 10px;
+    max-height: 50%;
+    padding: 20px 8px;
+  
+  }
+  .card{
+    width: 300px;
+    height: 150px;
+    background-color: #3d9aed;
+    /* margin: 100px auto; */
+    min-width: 120px;
+    max-width: 25%;
+  }
+}
