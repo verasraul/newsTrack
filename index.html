@@ -1,100 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Fonts/stylefont.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
-    <title>NewsTrack</title>
-</head>
-<body>
-    <input type="checkbox" name="" id="check">
-  <div class="section1-banner">
-    <div class="banner">
-        <img id="banner-image" src="./svg/Logo.svg" alt="NewsTrack">
-      </div>
-  </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheet.css"/>
+        <title>NewsAPI Search</title>
+    </head>
 
-<nav>
-<div class="section2-nav-bar">
-  <div class="left">
-    <div class="logo">NewsTrack</div>
-  </div>
-  <div class="right">
-    <ol class="links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-     <!-- <li><a href="#">Sign in</a></li>-->
-    </ol>
-    <label for="check" class="bar">
-      <span class="fa fa-bars" id="bars"></span>
-      <span class="fa fa-times" id="times"></span>
-    </label>
-  </div>
-  </div>
-</nav>
+    <body>
+        <noscript>This site requires JS to function properly</noscript>
+        <!-- create the search pane for the app -->
+        <div id="search-pane">
+            <!-- create a text input filed for the search pane -->
+            <input id="search-pane-input" type="text"/>
+                <!-- create search button for search pane -->
+                <button id="search-pane-button">SEARCH</button>
+                <!-- paragraph for error message -->
+                <p id="search-pane-message"></p>
+            
 
-<section>
-  <div class="section3-search">
-      <input type="search" placeholder="Type city/zipcode">
-      <button class="search-bt">Search</button>
-      <span class="fa-fa-search"></span>
-  </div>
-
-  <div class="section4-flashcards">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-  </div>
-
-</section>
-<!--<div class="section2">
-  
-  <div class="states-cards">
-   <img id="flash-card" src="./svg/Flashcards.svg" alt="" class="flash-cards">
-  </div>
-</div>
-
-<div class="section3">
-  <div class="about-us">
-    <div class="container">
-      <h2>About us</h2>
-      <p>"NewsTrack" is a web-app where users can browse news from all around the nation based on geography. The data/information will be displayed to the users via 
-        flash cards on the screen. The flash cards will show random news headlines in a random order and every time the site is refreshed each card will have a state 
-        name to indicate the origin of publication/reports. A user will be able to swipe back and forth between flash cards to view information from different states 
-        if they'd like to and by clicking on the news headline the user will be taken to the source of the full article.</p>
-    </div>
-  </div>
-</div>
-
-<section class="section4">
-  <div class="sign-up">
-    <div class="container">
-
-      <div class="title">
-        <h1>Sign up to NewsTrack</h1>
-      </div>
-      <div class="input-fields">
-        <form action="">
-          <input type="text" class="input" placeholder="Name">
-          <input type="email" class="input" placeholder="Email">
-          <input type="text" value="Sign in">
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
--->
-<footer class="footer">
-  <p>NewsTrack Copyright 2021</p>
-</footer>
-    <script type="text/javascript" src="script.js"></script>
-</body>
-
-
+        </div>
+        <ul id="search-results"></ul>
+        <script crossorigin="anonymous" type="module" src="./index.js" ></script>
+    </body>
 </html>
