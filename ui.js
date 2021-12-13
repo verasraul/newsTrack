@@ -53,7 +53,7 @@ const createListItem = (title, author, urlToImage) => {
 // create a function that accepts Articles array as an argument
 export const appendArticles = (articles) => {
     // for each element grab the referenced list
-    const list = document.getElementById("search-results");
+    const list = document.getElementById("card1-search-results");
 
     // iterate through array & for each headLine, create a list item node
     articles.forEach((headLine) => { 
