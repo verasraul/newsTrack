@@ -33,7 +33,7 @@ const createListItem = (title, author, urlToImage) => {
         posterNode.setAttribute('src', urlToImage); 
 
     // assemble/create figure node
-    const figureNode = document.createElement('figure');
+    const figureNode = document.getElementById('card2');
         // append the urlToImage node to figure
         figureNode.appendChild(posterNode);
         // append the caption node to figure
@@ -42,7 +42,7 @@ const createListItem = (title, author, urlToImage) => {
     // create the actual list item
     const listItemNode = document.createElement('li');
         // create class to style list item
-        figureNode.setAttribute('class', 'search-results-items');
+        figureNode.getAttribute('class', 'search-results-items');
         // append figure node to list
         listItemNode.appendChild(figureNode);
 
@@ -53,7 +53,7 @@ const createListItem = (title, author, urlToImage) => {
 // create a function that accepts Articles array as an argument
 export const appendArticles = (articles) => {
     // for each element grab the referenced list
-    const list = document.getElementById("card1-search-results");
+    const list = document.getElementById("search-results");
 
     // iterate through array & for each headLine, create a list item node
     articles.forEach((headLine) => { 
