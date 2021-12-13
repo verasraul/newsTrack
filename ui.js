@@ -33,7 +33,7 @@ const createListItem = (title, author, urlToImage) => {
         posterNode.setAttribute('src', urlToImage); 
 
     // assemble/create figure node
-    const figureNode = document.getElementById('card2');
+    const figureNode = document.getElementById('card3');
         // append the urlToImage node to figure
         figureNode.appendChild(posterNode);
         // append the caption node to figure
@@ -42,7 +42,7 @@ const createListItem = (title, author, urlToImage) => {
     // create the actual list item
     const listItemNode = document.createElement('li');
         // create class to style list item
-        figureNode.getAttribute('class', 'search-results-items');
+        figureNode.setAttribute('class', 'card3');
         // append figure node to list
         listItemNode.appendChild(figureNode);
 
