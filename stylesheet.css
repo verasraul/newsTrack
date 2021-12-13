@@ -1,12 +1,15 @@
 :root{
   --backgd: #FEF7E5;
-	--bigFont: #3B230A;
-  --smallFont: #231F20;
-  --aboutusText: #C2D2BD;
+  --logo: #231F20;
+  --aboutusText: #FEF7E5;
   --aboutBox: #D03C3C;
   --Box: #BD0008;
   --signUpText: #fff;
   --nav: #F22727;
+  --card1: #FF757E;
+  --card2: #3D9AED;
+  --card3: #77C79E;
+  --card4: #FAC360;
 }
 
 @font-face {
@@ -18,43 +21,46 @@
 }
 
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  font-family: 'Alef', sans-serif;
 }
 
 body{
-  background-color: #FEF7E5;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #FEF7E5;
 }
 
+/* Banner */
 .banner{
+  display: flex;
   height: 100%;
   width: 100%;
   padding: 0;
-  background-color: #F22727;
+  background-color: #FEF7E5;
 }
 
 #banner-image{
 margin: 0 auto;
-width: 100%; 
+/* width: 100%; */
 display: flex; 
 }
 
-nav{
+/* Navigation bar */
+.section2-nav-bar{
   display: flex;
   width: 100%;
-  background: var(--nav);
+  background: #F22727;
   position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
 }
 
-nav .logo{
-  font-size: 35px;
+.logo{
+  font-size: 45px;
   font-family: '28_days_laterregular';
   cursor: pointer;
 }
@@ -84,72 +90,35 @@ nav ol li:hover a{
   color: #BD0008;
 }
 
-.left, .right{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-section .search{
+/* Search */
+.section3-search{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto ;
+  margin: auto;
+  gap: 10px;
   padding: 50px 10px;
 }
 
-section .search input{
-  border-radius: 3px;
+.section3-search input{
   outline: none;
   background: #FEF7E5;
   width: 817px;
   height: 57px;
   line-height: 57px;
   font-size: 20px;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
-section .search .search-bt{
+.section3-search .search-bt{
   text-align: center;
   color: #fff;
   font-size: 20px;
   background: #BD0008;
-  border-radius: 6px;
+  border-radius: 10px;
   height: 57px;
   width: 100px;
   font-weight: bold;
-}
-
-nav .search span{
-  height: 100%;
-  color: blue;
-  font-size: 20px;
-  background: yellow;
-  height: 100%;
-  padding: 8px;
-  position: relative;
-  cursor: pointer;
-  z-index: 1;
-}
-
-nav .search span::hover{
-  color: #FEF7E5;
-}
-
-nav .search span::after{
-  height: 100%;
-  width: 0%;
-  content: '';
-  background: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  transition: 0.3;
-}
-
-nav.search span:hover::after{
-  width: 100%;
 }
 
 nav .bar{
@@ -169,293 +138,122 @@ input[type="checkbox"]{
   display: none;
 }
 
-@media only screen and (max-width: 1250px) {
-  nav{
-    display: block;
-    padding: 0;
-  }
-  nav .logo{
-    display: inline-block;
-    padding: 15px 30px;
-  }
-  nav .search{
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    margin-bottom: 15px;
-  }
-  nav .search input{
-    width: 90%;
-  }
-  nav ol{
-    display: flex;
-    flex-direction: column;
-    background: #FEF7E5;
-    height: 0;
-    visibility: hidden;
-    transition: 0.3s;
-  }
-  nav ol li a{
-    color: #BD0008;
-    font-size: 28px;
-    padding: 25px;
-    display: block;
-  }
-  nav ol li:nth-child(1){
-    transform: translate(-150px);
-  }
-  nav ol li:nth-child(1){
-    transform: translate(-150px);
-  }
-  nav ol li:nth-child(1){
-    transform: translate(-150px);
-  }
-  nav .bar{
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 80px;
-    cursor: pointer;
-  }
-    nav .bar #times{
-      display: none;
-    }
-  #check:checked ~ nav .bar #times{
-    display: block;
-  }
-  #check:checked ~ nav .bar #bars{
-    display: none;
-  }
-  #check:checked ~ nav ol{
-    visibility: visible;
-    height: 465px;
-  }
+
+/* FlashCards */
+.section4-flashcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* max-width: 80%; */
+  margin: auto;
+  gap: 10px 10px;
+  max-height: 50%;
+  padding: 20px 8px;
 }
 
- 
+.card{
+  width: 300px;
+  height: 350px;
+  background-color: #3d9aed;
+  /* margin: 100px auto; */
+  min-width: 120px;
+  max-width: 25%;
+}
+
+#card2{
+  background-color: #ff757e;
+}
+
+#card3{
+  background-color: #77C79E;
+}
+
+#card4{
+  background-color: #FAC360;
+}
+
+/* About us */
+.section5-aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #D03C3C;
+  margin: auto;
+  padding: 50px 10px;
+  /* width: 100%; */
+}
+
+h2{
+  font-size: 48px;
+  color: #FEF7E5;
+}
+
+p{
+  font-size: 20px;
+  color: #FEF7E5;
+  width: 70%;
+}
+
+/* Sign up */
+.section6-signUp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 10px;
+}
 
 /* Footer */
-  
 footer {
-  height: 80px;
+  height: 60px;
   display: flex;
-  justify-content: end;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: #D03C3C;
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 22px;
+  text-align: center;
   }
-/*
-.img-banner{
-  display: none;
-}
 
-html{
-  width: 100%;
-  height: 100%;
-}
-
-
-
-
-.container{
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+/* Banner */
+.banner{
   display: flex;
-  justify-items: right;
-  padding: 5px;
-  gap: 52px;
+  height: 106px;
+  width: 375px;
+  padding: 0;
+  background-color: #FEF7E5;
 }
-
-
-#logo{
-  width: 100%;
+#banner-image{
+margin: 0 auto;
+/* width: 100%; */
+display: flex; 
 }
-
-#searchInput{
-  position: absolute;
-  width: 817px;
-  left: 12.87%;
-  right: 37.32%;
-  top: 31.76%;
-  bottom: 64.7%;
-  
-  border: 3px solid #231F20;
-  box-sizing: border-box;
-  border-radius: 6px;
-}
-
-#search-button {
-  background-color: rgb(189, 0, 8);
-  position: absolute;
-  left: 64.02%;
-  right: 28.6%;
-  top: 32.2%;
-  bottom: 65.26%;
-
-  border-radius: 6px;
-  font-size: 24px;
-  width: 121px;
-  height: 41px;
-
-
-left: 65.49%;
-right: 29.7%;
-top: 53%;
-bottom: 65.88%;
-
-font-weight: bold;
-font-size: 24px;
-line-height: 22px;
-color: #FFFFFF;
-}
-
-.states-cards{
-  
-}
-
-#flash-card{
-  width: 100%;
-  bottom: 63%;
-
-}
-
-
-.about-us{
-  top: 953px;
-  width: 100%;
-}
-
-.sign-up, h2{
-  top: 1372px;
-  font-size: 48px;
-}
-
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #D03C3C;
-  color: #FFFFFF;
-  font-size: 18px;
-}
-
-
-  :root{
-    --backgd: #FEF7E5;
-    --bigFont: #3B230A;
-    --smallFont: #231F20;
-    --aboutusText: #C2D2BD;
-    --Box: #BD0008;
-    --signUpText: #fff;
-  }
-  
-  
-  *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Alef', sans-serif;
-  }
-  
-  .wrapper{
+  .section2-nav-bar{
     width: 100%;
   }
-  
-  .img-banner{
-    display: none;
-  }
-  
-  html{
-    width: 100%;
-    height: 100%;
-  }
-  
-  
-  body{
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-    background-color: #FEF7E5;
-    text-align: center;
-    margin: auto;
-  }
-  
-  .container{
+
+  .section4-flashcards{
     display: flex;
-    justify-items: right;
-    padding: 5px;
-    gap: 52px;
-  }
-  
-  
-  #logo{
-    width: 100%;
-  }
-  
-  #searchInput{
-    position: absolute;
-    width: 817px;
-    left: 12.87%;
-    right: 37.32%;
-    top: 31.76%;
-    bottom: 64.7%;
-    
-    border: 3px solid #231F20;
-    box-sizing: border-box;
-    border-radius: 6px;
-  }
-  
-#search-button {
-  background-color: rgb(189, 0, 8);
-  position: absolute;
-  left: 64.02%;
-  right: 28.6%;
-  top: 32.2%;
-  bottom: 65.26%;
-  
-  border-radius: 6px;
-  font-size: 24px;
-  width: 121px;
-  height: 41px;
-  
-  
-  left: 65.49%;
-  right: 29.7%;
-  top: 53%;
-  bottom: 65.88%;
-  
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 22px;
-  color: #FFFFFF;
-  }
-  
-  .states-cards{
-    
-  }
-  
-  #flash-card{
-    width: 100%;
-    bottom: 63%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* max-width: 80%; */
+    margin: auto;
+    gap: 10px 10px;
+    max-height: 50%;
+    padding: 20px 8px;
   
   }
-  
-  
-  .about-us{
-    top: 953px;
-    width: 100%;
+  .card{
+    width: 300px;
+    height: 150px;
+    background-color: #3d9aed;
+    /* margin: 100px auto; */
+    min-width: 120px;
+    max-width: 25%;
   }
-  
-  .sign-up, h2{
-    top: 1372px;
-    font-size: 48px;
-  }
-  
-  
-  
-
+}
