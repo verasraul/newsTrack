@@ -22,6 +22,8 @@ const createListItem = (title, description, urlToImage) => {
     const captionNode = document.createElement("figcaption");
         // append text tool child to the element of the caption
         captionNode.appendChild(document.createTextNode(caption));
+        captionNode.setAttribute('class', 'figcaption');
+        
 
     // element for article image
     const posterNode = document.createElement('img');
@@ -33,21 +35,20 @@ const createListItem = (title, description, urlToImage) => {
         posterNode.setAttribute('src', urlToImage); 
 
     // assemble/create figure node 
-    const figureNode = document.createElementById('div');
+    const figureNode = document.createElement('figure');
         // append the urlToImage node to figure
         figureNode.appendChild(posterNode);
         // append the caption node to figure
         figureNode.appendChild(captionNode);
 
     // create the actual list item
-    const listItemNode = document.createElement('li');
+    const listItemNode = document.createElement('div');
         // create class to style list item
-        figureNode.setAttribute('class', 'section4-flashcards');
+        figureNode.setAttribute('class', 'search-results-items');
         // append figure node to list
         listItemNode.appendChild(figureNode);
 
         return listItemNode;
-
     
 };
 
