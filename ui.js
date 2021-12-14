@@ -26,7 +26,7 @@ const createListItem = (title, description, urlToImage) => {
         captionNode.setAttribute('class', 'figcaption');
 
     // create element for the headline
-    const headlineNode = document.createElement("p");
+    const headlineNode = document.createElement("h1");
         // append headline child to the element of the caption
         headlineNode.appendChild(document.createTextNode(headline));
         headlineNode.setAttribute('class', 'headline');
@@ -52,7 +52,7 @@ const createListItem = (title, description, urlToImage) => {
         
 
     // create the actual list item
-    const listItemNode = document.createElement('div');
+    const listItemNode = document.createElement('item');
         // create class to style list item
         figureNode.setAttribute('class', 'search-results-items');
         // append figure node to list

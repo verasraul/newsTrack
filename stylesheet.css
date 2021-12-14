@@ -142,25 +142,41 @@ input[type="checkbox"]{
 /* FlashCards/Search Results */
 /* #section4-flashcards */
 #search-results{
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+  gap: 80px;
+  max-height: 50%;
+  padding: 20px 8px;
+  padding-bottom: 70px;
+
+  /* margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   flex-wrap: wrap;
-  /* align-items: center; */
-  /* max-width: 80%; */
-  /* margin: auto; */
-  gap: 80px;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
   max-height: 50%;
-  /* padding: 20px 8px; */
+  gap: 80px;
+  padding: 20px 8px;
   padding-bottom: 70px;
-  /* background-color: #77C79E; */
+  background-color: #77C79E;
   
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: space-around; */
+  justify-content: space-around; */
+}
+.item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
 }
 .figcaption{
   font-weight: normal;
@@ -169,13 +185,16 @@ input[type="checkbox"]{
   font-weight:bold;
   color: #231F20;
 }
-.search-results-item {
+.search-results-items {
   /* set width */
   width: 300px;
   /* align text to center */
   text-align: center;
   /* if text-string is longer than set width...hide it */
   text-overflow: ellipsis;
+}
+h1 {
+  font-size: 10px;
 }
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
