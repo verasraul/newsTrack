@@ -1,0 +1,381 @@
+:root{
+  --backgd: #FEF7E5;
+  --logo: #231F20;
+  --aboutusText: #FEF7E5;
+  --aboutBox: #D03C3C;
+  --Box: #BD0008;
+  --signUpText: #fff;
+  --nav: #F22727;
+  --card1: #FF757E;
+  --card2: #3D9AED;
+  --card3: #77C79E;
+  --card4: #FAC360;
+}
+
+/* @font-face { 
+  font-family: '28_days_laterregular';
+  src: url('28_days_later-webfont.woff2') format('woff2'),
+       url('28_days_later-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #FEF7E5;
+}
+
+/* Banner */
+.banner{
+  display: flex;
+  height: 100%;
+  padding: 0;
+  background-color: #FEF7E5;
+}
+
+#banner-image{
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+width: 85%; 
+}
+
+/* Navigation bar */
+.section2-nav-bar{
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #F22727;
+}
+
+.logo{
+  font-size: 35px;
+  /* font-family: '28_days_laterregular'; */
+  cursor: pointer;
+}
+nav ol{
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+nav ol li{
+  margin: 0 px;
+  font-weight: bold;
+}
+nav ol li a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+nav ol li:hover a{
+  background: #fff;
+  color: #BD0008;
+} 
+
+
+/* Search */
+.section3-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  padding: 50px 10px;
+}
+
+.section3-search input{
+  outline: none;
+  background: #FEF7E5;
+  width: 817px;
+  height: 57px;
+  line-height: 57px;
+  font-size: 20px;
+  border-radius: 10px;
+  border-color: #231F20;
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.section3-search .search-bt{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  background: #BD0008;
+  border-radius: 10px;
+  height: 57px;
+  width: 100px;
+  font-weight: bold;
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+nav .bar{
+  position: relative;
+  margin: auto;
+  display: 0;
+}
+nav .bar span{
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+}
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  display: none;
+}
+
+
+
+
+/* FlashCards/Search Results */
+/* #section4-flashcards */
+#search-results{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+  gap: 80px;
+  max-height: 50%;
+  padding: 20px 8px;
+  padding-bottom: 70px;
+
+  /* margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  max-height: 50%;
+  gap: 80px;
+  padding: 20px 8px;
+  padding-bottom: 70px;
+  background-color: #77C79E;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; */
+}
+.item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+.figcaption{
+  font-weight: normal;
+}
+.headline{
+  font-weight:bold;
+  color: #231F20;
+}
+.search-results-items {
+  /* set width */
+  width: 300px;
+  /* align text to center */
+  text-align: center;
+  /* if text-string is longer than set width...hide it */
+  text-overflow: ellipsis;
+}
+h1 {
+  font-size: 20px;
+}
+.search-results-item-urlToImage {
+    /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* adding styling for 'li' items */
+/* ul {
+	list-style-type:none;
+	margin:100;
+	padding:0;
+  padding-right: 20px;
+  
+} */
+
+/* 
+ul > li {
+  list-style-type:none;
+	float:left;
+	line-height:30px;
+	font-weight:bold;
+	padding:0 20px;
+
+  /* display li items horizontally  */
+  /*
+  display: inline;
+  padding-right: 20px;
+}
+*/
+
+
+/* .search-results{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+} */
+
+/* 
+.card{
+  width: 300px;
+  height: 350px; 
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  background-color: #3d9aed;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}  */
+/* #card1{
+  background-color: #3d9aed;
+} */
+
+
+/* About us */
+.section5-aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #D03C3C;
+  margin: auto;
+  padding: 50px 10px;
+  width: 85%;
+}
+
+h2{
+  font-size: 48px;
+  color: #FEF7E5;
+}
+
+p{
+  font-size: 20px;
+  color: #FEF7E5;
+  width: 50%;
+}
+
+/* Sign up */
+.section6-signUp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 10px;
+}
+
+/* Footer */
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D03C3C;
+  color: #FFFFFF;
+  font-size: 22px;
+  text-align: center;
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 809px) {
+/* Banner */
+  .banner{
+    display: flex;
+    
+    padding: 0;
+    background-color: #FEF7E5;
+  }
+  #banner-image{
+    margin: 0 auto;
+    height: 106px;
+    width: 375px;
+    display: flex; 
+  }
+  /* Navigation bar */
+  /* .section2-nav-bar{
+    width: 100%;
+  } */
+  .section3-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    padding: 30px 25px;
+  }
+  .section3-search input{
+    outline: none;
+    background: #FEF7E5;
+    width: 300px;
+    height: 40px;
+    line-height: 17px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  .section3-search .search-bt{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+  }
+
+   /* About us */
+  .section5-aboutUs{
+    padding: 10px 10px;
+    /* width: 100%; */
+  }
+  h2{
+    font-size: 28px;
+  }
+  p{
+    font-size: 14px;
+    width: 70%;
+  }
+  .section4-flashcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     max-width: 80%;
+    margin: auto;
+    gap: 10px 10px;
+    max-height: 50%;
+    padding: 20px 8px;
+  }
+   .card{
+    width: 300px;
+    height: 150px;
+    background-color: #3d9aed;
+    margin: 100px auto;
+    min-width: 120px;
+    max-width: 25%;
+  } 
+}
