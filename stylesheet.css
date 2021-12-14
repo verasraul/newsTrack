@@ -143,40 +143,26 @@ input[type="checkbox"]{
 /* #section4-flashcards */
 #search-results{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 80%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* overflow-y: hidden; */
+  /* white-space: nowrap; */
+  .search-results-items {
+    flex: 0 0 auto;
+  }
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* max-width: 80%; */
   margin: auto;
-  gap: 80px;
-  max-height: 50%;
+  /* gap: 80px; */
+  /* max-height: 50%; */
   padding: 20px 8px;
   padding-bottom: 70px;
-
-  /* margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 80%;
-  margin: auto;
-  max-height: 50%;
-  gap: 80px;
-  padding: 20px 8px;
-  padding-bottom: 70px;
-  background-color: #77C79E;
-  
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; */
-}
-.item {
-  width: 48%;
-  height: 100px;
-  margin-bottom: 2%;
+  gap: 20px;
+ 
+  /* padding: 0; */
+  /* align-items: center; */
+  /* max-width: 80%; */
 }
 .figcaption{
   font-weight: normal;
@@ -186,19 +172,24 @@ input[type="checkbox"]{
   color: #231F20;
 }
 .search-results-items {
+  /* flex-grow: 1; */
+  height: 100;
   /* set width */
   width: 300px;
   /* align text to center */
-  text-align: center;
+  text-align: right;
   /* if text-string is longer than set width...hide it */
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
+}
+.search-results-items + .search-results-items {
+  /* margin-left: 2%; */
 }
 h1 {
-  font-size: 10px;
+  font-size: 20px;
 }
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
