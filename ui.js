@@ -16,13 +16,20 @@ export const clearArticles = () => {
 //   helper function to create list item
 const createListItem = (title, description, urlToImage) => {
     // create constant to hold the caption of the image
-    const caption = `${description}, ${title}`;
+    const caption = `${title}`;
+    const headline = `${description}`;
 
     // create element for the headline
     const captionNode = document.createElement("figcaption");
         // append text tool child to the element of the caption
         captionNode.appendChild(document.createTextNode(caption));
         captionNode.setAttribute('class', 'figcaption');
+
+    // create element for the headline
+    const headlineNode = document.createElement("p");
+        // append headline child to the element of the caption
+        headlineNode.appendChild(document.createTextNode(headline));
+        headlineNode.setAttribute('class', 'headline');
         
 
     // element for article image
@@ -38,8 +45,11 @@ const createListItem = (title, description, urlToImage) => {
     const figureNode = document.createElement('figure');
         // append the urlToImage node to figure
         figureNode.appendChild(posterNode);
+        // append the headline node to figue element
+        figureNode.appendChild(headlineNode);
         // append the caption node to figure
         figureNode.appendChild(captionNode);
+        
 
     // create the actual list item
     const listItemNode = document.createElement('div');
