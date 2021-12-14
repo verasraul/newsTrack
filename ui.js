@@ -14,11 +14,11 @@ export const clearArticles = () => {
 
 
 //   helper function to create list item
-const createListItem = (title, author, urlToImage) => {
+const createListItem = (title, description, urlToImage) => {
     // create constant to hold the caption of the image
-    const caption = `${author}, ${title}`;
+    const caption = `${description}, ${title}`;
 
-    // create element for the img
+    // create element for the headline
     const captionNode = document.createElement("figcaption");
         // append text tool child to the element of the caption
         captionNode.appendChild(document.createTextNode(caption));
@@ -26,14 +26,14 @@ const createListItem = (title, author, urlToImage) => {
     // element for article image
     const posterNode = document.createElement('img');
         // alternative text tool child for img element
-        posterNode.setAttribute('alt', caption);
+        posterNode.setAttribute('alt', 'caption');
         // class to style img element
         posterNode.setAttribute('class', 'search-results-item-urlToImage');
         // set the source attritube to add the urlToImage url
         posterNode.setAttribute('src', urlToImage); 
 
-    // assemble/create figure node
-    const figureNode = document.getElementById('card3');
+    // assemble/create figure node 
+    const figureNode = document.getElementById('section4-flashcards');
         // append the urlToImage node to figure
         figureNode.appendChild(posterNode);
         // append the caption node to figure
@@ -42,11 +42,13 @@ const createListItem = (title, author, urlToImage) => {
     // create the actual list item
     const listItemNode = document.createElement('li');
         // create class to style list item
-        figureNode.setAttribute('class', 'card3');
+        figureNode.setAttribute('class', 'section4-flashcards');
         // append figure node to list
         listItemNode.appendChild(figureNode);
 
         return listItemNode;
+
+    
 };
 
 
@@ -60,7 +62,7 @@ export const appendArticles = (articles) => {
       // creat function to display fallback img when headLine titles don't retrieve post imgs
       // const headLinePoster = headLine.urlToImage && headLine.urlToImage != 'null' ?  headLine.urlToImage : FALLBACK_POSTER_URL;
       // create list-item-nodes passing keys/items from objects in JSON array (ie. response you get from API requests)
-      const listItemNode = createListItem(headLine.author, headLine.title, headLine.urlToImage);
+      const listItemNode = createListItem(headLine.description, headLine.title, headLine.urlToImage);
         // append list items for each element
         list.appendChild(listItemNode);
     });

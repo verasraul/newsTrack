@@ -12,14 +12,13 @@
   --card4: #FAC360;
 }
 
-@font-face {
-  /* font-family: '28_days_laterregular';
-  /* src: url('28_days_later-webfont.woff2') format('woff2'),  */
-       /* url('28_days_later-webfont.woff') format('woff'); */ 
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* @font-face { 
+  font-family: '28_days_laterregular';
+  src: url('28_days_later-webfont.woff2') format('woff2'),
+       url('28_days_later-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 *{
   margin: 0px;
@@ -38,45 +37,42 @@ body{
 .banner{
   display: flex;
   height: 100%;
-  width: 100%;
   padding: 0;
   background-color: #FEF7E5;
 }
 
 #banner-image{
 margin: 0 auto;
-/* width: 100%; */
-display: flex; 
+display: flex;
+justify-content: space-around;
+width: 85%; 
 }
 
 /* Navigation bar */
 .section2-nav-bar{
   display: flex;
   width: 100%;
-  background: #F22727;
   position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  background: #F22727;
 }
 
 .logo{
-  font-size: 45px;
-  font-family: '28_days_laterregular';
+  font-size: 35px;
+  /* font-family: '28_days_laterregular'; */
   cursor: pointer;
 }
-
 nav ol{
   display: flex;
   list-style: none;
   margin: auto 0;
 }
-
 nav ol li{
   margin: 0 px;
   font-weight: bold;
 }
-
 nav ol li a{
   color: #fff;
   font-size: 20px;
@@ -85,10 +81,14 @@ nav ol li a{
   letter-spacing: 1px;
   padding: 5px 10px;
 }
-
 nav ol li:hover a{
   background: #fff;
   color: #BD0008;
+} 
+
+/* CUADRITO */
+.cuadrito{
+
 }
 
 /* Search */
@@ -109,6 +109,8 @@ nav ol li:hover a{
   line-height: 57px;
   font-size: 20px;
   border-radius: 10px;
+  border-color: #231F20;
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
 .section3-search .search-bt{
@@ -120,6 +122,7 @@ nav ol li:hover a{
   height: 57px;
   width: 100px;
   font-weight: bold;
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
 nav .bar{
@@ -127,13 +130,11 @@ nav .bar{
   margin: auto;
   display: 0;
 }
-
 nav .bar span{
   position: absolute;
   color: #fff;
   font-size: 25px;
 }
-
 input[type="checkbox"]{
   -webkit-appearance: none;
   display: none;
@@ -141,49 +142,91 @@ input[type="checkbox"]{
 
 
 /* FlashCards */
-.section4-flashcards{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+#section4-flashcards{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
   /* max-width: 80%; */
-  margin: auto;
-  gap: 10px 10px;
+  /* margin: auto; */
+  gap: 80px;
   max-height: 50%;
-  padding: 20px 8px;
+  /* padding: 20px 8px; */
+  padding-bottom: 70px;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-around; */
+
 }
 
+/* adding styling for 'li' items */
+/* ul {
+	list-style-type:none;
+	margin:100;
+	padding:0;
+  padding-right: 20px;
+  
+} */
+ul > li {
+  list-style-type:none;
+	float:left;
+	line-height:30px;
+	font-weight:bold;
+	padding:0 20px;
+
+  /* display li items horizontally */
+  display: inline;
+  padding-right: 20px;
+}
+
+/* 
 .card{
   width: 300px;
-  height: 350px;
+  height: 350px; 
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
   background-color: #3d9aed;
-  /* margin: 100px auto; */
-  min-width: 120px;
-  max-width: 25%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}  */
+.search-results-item {
+  /* set width */
+  width: 300px;
+  /* align text to center */
+  text-align: center;
+  /* if text-string is longer than set width...hide it */
+  text-overflow: ellipsis;
 }
-
-#card2{
-  background-color: #ff757e;
-  /* width: 100px; */
-}
-
-#card3{
-  background-color: #77C79E;
-  /* min-width: 120px;
-  max-width: 25%; */
-  border-image-width: 0%;
-}
-
-/* style for each poster */
 .search-results-item-urlToImage {
-  /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-  width: 100%;
-  height: 150%;
-};
-
+    /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+    width: 20%;
+    height: 100%;
+}
+.search-results{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+/* #card1{
+  background-color: #3d9aed;
+} */
+/* #card2{
+  background-color: #ff757e; 
+} */
+/* #card3{
+  background-color: #77C79E;
+}
 #card4{
   background-color: #FAC360;
-}
+} */
 
 /* About us */
 .section5-aboutUs{
@@ -194,7 +237,7 @@ input[type="checkbox"]{
   background: #D03C3C;
   margin: auto;
   padding: 50px 10px;
-  /* width: 100%; */
+  width: 85%;
 }
 
 h2{
@@ -205,7 +248,7 @@ h2{
 p{
   font-size: 20px;
   color: #FEF7E5;
-  width: 70%;
+  width: 50%;
 }
 
 /* Sign up */
@@ -230,42 +273,80 @@ footer {
   text-align: center;
   }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 809px) {
 /* Banner */
-.banner{
-  display: flex;
-  height: 106px;
-  width: 375px;
-  padding: 0;
-  background-color: #FEF7E5;
-}
-#banner-image{
-margin: 0 auto;
-/* width: 100%; */
-display: flex; 
-}
-  .section2-nav-bar{
+  .banner{
+    display: flex;
+    
+    padding: 0;
+    background-color: #FEF7E5;
+  }
+  #banner-image{
+    margin: 0 auto;
+    height: 106px;
+    width: 375px;
+    display: flex; 
+  }
+  /* Navigation bar */
+  /* .section2-nav-bar{
     width: 100%;
+  } */
+  .section3-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    padding: 30px 25px;
+  }
+  .section3-search input{
+    outline: none;
+    background: #FEF7E5;
+    width: 300px;
+    height: 40px;
+    line-height: 17px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  .section3-search .search-bt{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
   }
 
+   /* About us */
+  .section5-aboutUs{
+    padding: 10px 10px;
+    /* width: 100%; */
+  }
+  h2{
+    font-size: 28px;
+  }
+  p{
+    font-size: 14px;
+    width: 70%;
+  }
   .section4-flashcards{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* max-width: 80%; */
+     max-width: 80%;
     margin: auto;
     gap: 10px 10px;
     max-height: 50%;
     padding: 20px 8px;
-  
   }
-  .card{
+   .card{
     width: 300px;
     height: 150px;
     background-color: #3d9aed;
-    /* margin: 100px auto; */
+    margin: 100px auto;
     min-width: 120px;
     max-width: 25%;
-  }
+  } 
 }
