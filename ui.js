@@ -33,7 +33,7 @@ const createListItem = (title, description, urlToImage) => {
         posterNode.setAttribute('src', urlToImage); 
 
     // assemble/create figure node 
-    const figureNode = document.getElementById('section4-flashcards');
+    const figureNode = document.createElementById('div');
         // append the urlToImage node to figure
         figureNode.appendChild(posterNode);
         // append the caption node to figure
