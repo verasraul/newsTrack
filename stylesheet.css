@@ -194,7 +194,7 @@ input[type="checkbox"]{
   text-overflow: ellipsis;
 }
 h1 {
-  font-size: 10px;
+  font-size: 20px;
 }
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
