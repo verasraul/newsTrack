@@ -189,8 +189,9 @@ h1 {
 }
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-    width: 60%;
-    height: 100%;
+    width: 180px;
+    height: 240px;
+    
 }
 
 
