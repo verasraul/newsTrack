@@ -91,7 +91,22 @@ input[type="checkbox"]{
   display: none;
 }
 
+<<<<<<< HEAD
+/* Search Results */
+#section4-flashcards{
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* max-width: 80%; */
+  /* margin: auto; */
+  gap: 80px;
+  max-height: 50%;
+  /* padding: 20px 8px; */
+  padding-bottom: 70px;
+=======
 
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
 
 
 
@@ -99,6 +114,10 @@ input[type="checkbox"]{
 #search-results{
   /* side scroll feature */
   display: flex;
+<<<<<<< HEAD
+  flex-flow: row wrap;
+  /* justify-content: space-around; */
+=======
   flex-wrap: nowrap;
   overflow-x: auto;
     .search-results-items {
@@ -109,6 +128,7 @@ input[type="checkbox"]{
   padding: 80px 20px;
   padding-bottom: 70px;
   gap: 20px;
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
 }
 
 /* Search resulst styling */
@@ -122,6 +142,13 @@ input[type="checkbox"]{
   /* text-overflow: ellipsis; */
 }
 
+<<<<<<< HEAD
+.search-results-item {
+  /* set width */
+  width: 300px;
+  /* align text to center */
+  text-align: center;
+=======
 .search-results-items {
   display: flex;
   flex-direction: column;
@@ -132,6 +159,7 @@ input[type="checkbox"]{
   background-color: #3d9aed;
   /* border: 1px solid #ccc; */
   border-radius: 10px;
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
   /* if text-string is longer than set width...hide it */
   text-overflow: ellipsis;
  
@@ -152,13 +180,28 @@ item img {
 h1 {
   font-size: 20px;
 }
+
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+<<<<<<< HEAD
+    width: 20%;
+    height: 100%;
+}
+
+.search-results{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+=======
     width: 300px;
     height: 180px;
     /* make image corners round */
     border-radius: 10px;
     /* text-align: left; */
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
 }
 
 
