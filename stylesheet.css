@@ -12,14 +12,6 @@
   --card4: #FAC360;
 }
 
-/* @font-face { 
-  font-family: '28_days_laterregular';
-  src: url('28_days_later-webfont.woff2') format('woff2'),
-       url('28_days_later-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 *{
   margin: 0px;
   padding: 0px;
@@ -48,46 +40,8 @@ justify-content: space-around;
 width: 85%; 
 }
 
-/* Navigation bar */
-.section2-nav-bar{
-  display: flex;
-  width: 100%;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: #F22727;
-}
-
-.logo{
-  font-size: 35px;
-  /* font-family: '28_days_laterregular'; */
-  cursor: pointer;
-}
-nav ol{
-  display: flex;
-  list-style: none;
-  margin: auto 0;
-}
-nav ol li{
-  margin: 0 px;
-  font-weight: bold;
-}
-nav ol li a{
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  padding: 5px 10px;
-}
-nav ol li:hover a{
-  background: #fff;
-  color: #BD0008;
-} 
-
-
 /* Search */
+/* style for the search bar */
 .section3-search{
   display: flex;
   justify-content: center;
@@ -97,6 +51,7 @@ nav ol li:hover a{
   padding: 50px 10px;
 }
 
+/* styling for search input field */
 .section3-search input{
   outline: none;
   background: #FEF7E5;
@@ -139,88 +94,78 @@ input[type="checkbox"]{
 
 
 
-/* FlashCards/Search Results */
-/* #section4-flashcards */
+/* Cards/Search Results */
 #search-results{
+  /* side scroll feature */
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  /* overflow-y: hidden; */
-  /* white-space: nowrap; */
-  .search-results-items {
-    flex: 0 0 auto;
-  }
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  /* max-width: 80%; */
+    .search-results-items {
+      flex: 0 0 auto;
+    }
+
   margin: auto;
-  /* gap: 80px; */
-  /* max-height: 50%; */
-  padding: 20px 8px;
-  padding-bottom: 70px;
+  padding: 80px 20px;
+  /* padding-bottom: 70px; */
   gap: 20px;
- 
-  /* padding: 0; */
-  /* align-items: center; */
-  /* max-width: 80%; */
 }
-.figcaption{
-  font-weight: normal;
-}
-.headline{
-  font-weight:bold;
-  color: #231F20;
-}
+/* .search-results>*:first-child {
+  align-self: stretch;
+} */
+/* Search resulst styling */
 .search-results-items {
-  /* flex-grow: 1; */
   height: 100;
   /* set width */
   width: 300px;
   /* align text to center */
-  text-align: right;
+  text-align: justify;
   /* if text-string is longer than set width...hide it */
   /* text-overflow: ellipsis; */
 }
 .search-results-items + .search-results-items {
   /* margin-left: 2%; */
 }
+item {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  width: 300px;
+  height: 400px; 
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  background-color: #3d9aed;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  /* if text-string is longer than set width...hide it */
+  text-overflow: ellipsis;
+}
+.figcaption{
+  font-weight: normal;
+  padding: 0 20px 20px;
+}
+.headline{
+  font-weight:bold;
+  color: #231F20;
+  /* padding: 0 20px 20px; */
+}
+/* .headline .figcaption{
+  padding: 0 20px 20px;
+} */
+item img {
+  align-self: center;
+}
 h1 {
   font-size: 20px;
 }
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-    width: 60%;
-    height: 100%;
+    width: 300px;
+    height: 180px;
+    /* make image corners round */
+    border-radius: 10px;
+    /* text-align: left; */
 }
 
 
-
-
-
-
-/* adding styling for 'li' items */
-/* ul {
-	list-style-type:none;
-	margin:100;
-	padding:0;
-  padding-right: 20px;
-  
-} */
-
-/* 
-ul > li {
-  list-style-type:none;
-	float:left;
-	line-height:30px;
-	font-weight:bold;
-	padding:0 20px;
-
-  /* display li items horizontally  */
-  /*
-  display: inline;
-  padding-right: 20px;
-}
-*/
 
 
 /* .search-results{
