@@ -41,6 +41,7 @@ width: 85%;
 }
 
 /* Search */
+/* style for the search bar */
 .section3-search{
   display: flex;
   justify-content: center;
@@ -50,6 +51,7 @@ width: 85%;
   padding: 50px 10px;
 }
 
+/* styling for search input field */
 .section3-search input{
   outline: none;
   background: #FEF7E5;
@@ -89,6 +91,7 @@ input[type="checkbox"]{
   display: none;
 }
 
+<<<<<<< HEAD
 /* Search Results */
 #section4-flashcards{
   display: flex;
@@ -101,46 +104,86 @@ input[type="checkbox"]{
   max-height: 50%;
   /* padding: 20px 8px; */
   padding-bottom: 70px;
+=======
 
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
+
+
+
+/* Cards/Search Results */
+#search-results{
+  /* side scroll feature */
   display: flex;
+<<<<<<< HEAD
   flex-flow: row wrap;
   /* justify-content: space-around; */
+=======
+  flex-wrap: nowrap;
+  overflow-x: auto;
+    .search-results-items {
+      flex: 0 0 auto;
+    }
+
+  margin: auto;
+  padding: 80px 20px;
+  padding-bottom: 70px;
+  gap: 20px;
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
 }
 
-/* adding styling for 'li' items */
-/* ul {
-	list-style-type:none;
-	margin:100;
-	padding:0;
-  padding-right: 20px;
-  
-} */
-ul > li {
-  list-style-type:none;
-	float:left;
-	line-height:30px;
-	font-weight:bold;
-	padding:0 20px;
-
-  /* display li items horizontally */
-  display: inline;
-  padding-right: 20px;
+/* Search resulst styling */
+.search-results-items {
+  height: 100;
+  /* set width */
+  width: 300px;
+  /* align text to center */
+  text-align: justify;
+  /* if text-string is longer than set width...hide it */
+  /* text-overflow: ellipsis; */
 }
 
+<<<<<<< HEAD
 .search-results-item {
   /* set width */
   width: 300px;
   /* align text to center */
   text-align: center;
+=======
+.search-results-items {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  width: 300px;
+  height: 400px; 
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  background-color: #3d9aed;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
   /* if text-string is longer than set width...hide it */
   text-overflow: ellipsis;
+ 
+}
+.figcaption{
+  font-weight: normal;
+  padding: 0 20px 20px;
+}
+.headline{
+  font-weight:bold;
+  color: #231F20;
+  /* padding: 0 20px 20px; */
+}
+.search-results-item-urlToImage
+item img {
+  align-self: center;
+}
+h1 {
+  font-size: 20px;
 }
 
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+<<<<<<< HEAD
     width: 20%;
     height: 100%;
 }
@@ -152,10 +195,20 @@ ul > li {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+=======
+    width: 300px;
+    height: 180px;
+    /* make image corners round */
+    border-radius: 10px;
+    /* text-align: left; */
+>>>>>>> d08aca7735f4e7f35a014eca2f68c0c65f7750c5
 }
-/* #card1{
-  background-color: #3d9aed;
-} */
+
+
+
+
+
+
 
 
 /* About us */
@@ -181,16 +234,6 @@ p{
   width: 50%;
 }
 
-/* Sign up */
-.section6-signUp{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 40px 10px;
-}
-
 /* Footer */
 footer {
   height: 60px;
@@ -207,7 +250,6 @@ footer {
 /* Banner */
   .banner{
     display: flex;
-    
     padding: 0;
     background-color: #FEF7E5;
   }
@@ -217,10 +259,6 @@ footer {
     width: 375px;
     display: flex; 
   }
-  /* Navigation bar */
-  /* .section2-nav-bar{
-    width: 100%;
-  } */
   .section3-search{
     display: flex;
     justify-content: center;
@@ -247,36 +285,32 @@ footer {
     width: 100px;
     font-weight: bold;
   }
-
+  .search-results-items {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    width: 300px;
+    height: 400px; 
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    background-color: #3d9aed;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    /* if text-string is longer than set width...hide it */
+    text-overflow: ellipsis;
+  }
+  .figcaption{
+    font-weight: normal;
+    padding: 0 20px 20px;
+  }
+  .headline{
+    font-weight:bold;
+    font-size: 18px;
+    color: #231F20;
+    /* padding: 0 20px 20px; */
+  }
    /* About us */
   .section5-aboutUs{
     padding: 10px 10px;
     /* width: 100%; */
   }
-  h2{
-    font-size: 28px;
-  }
-  p{
-    font-size: 14px;
-    width: 70%;
-  }
-  .section4-flashcards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-     max-width: 80%;
-    margin: auto;
-    gap: 10px 10px;
-    max-height: 50%;
-    padding: 20px 8px;
-  }
-   .card{
-    width: 300px;
-    height: 150px;
-    background-color: #3d9aed;
-    margin: 100px auto;
-    min-width: 120px;
-    max-width: 25%;
-  } 
 }
