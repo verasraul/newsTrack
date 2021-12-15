@@ -22,7 +22,6 @@ body{
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #FEF7E5;
 }
 
 /* Banner */
@@ -30,7 +29,7 @@ body{
   display: flex;
   height: 100%;
   padding: 0;
-  background-color: #FEF7E5;
+
 }
 
 #banner-image{
@@ -54,7 +53,7 @@ width: 85%;
 /* styling for search input field */
 .section3-search input{
   outline: none;
-  background: #FEF7E5;
+  background: #fff;
   width: 817px;
   height: 57px;
   line-height: 57px;
@@ -70,6 +69,7 @@ width: 85%;
   font-size: 20px;
   background: #BD0008;
   border-radius: 10px;
+  
   height: 57px;
   width: 100px;
   font-weight: bold;
@@ -110,56 +110,71 @@ input[type="checkbox"]{
   padding-bottom: 70px;
   gap: 20px;
 }
-
 /* Search resulst styling */
 .search-results-items {
-  height: 100;
   /* set width */
-  width: 300px;
+  /* width: 500px; */
   /* align text to center */
-  text-align: justify;
-  /* if text-string is longer than set width...hide it */
-  /* text-overflow: ellipsis; */
-}
-
-.search-results-items {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 8px;
-  width: 300px;
+  /* margin: 8px; */
   height: 400px; 
   box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
-  background-color: #3d9aed;
   /* border: 1px solid #ccc; */
   border-radius: 10px;
+  border: 3px #231F20 solid;
   /* if text-string is longer than set width...hide it */
   text-overflow: ellipsis;
- 
-}
-.figcaption{
-  font-weight: normal;
-  padding: 0 20px 20px;
+  background: #231F20;
+  /* background: #3ED0A0; */
+  
 }
 .headline{
+  /* if text-string is longer than set width...hide it */
+  text-overflow: ellipsis;
+  display-over
   font-weight:bold;
-  color: #231F20;
+  color: black;
   /* padding: 0 20px 20px; */
-}
-.search-results-item-urlToImage
-item img {
-  align-self: center;
 }
 h1 {
   font-size: 20px;
+  text-align: right;
+  /* background: white; */
+  background: #3ED0A0;
+  width: 100%;
+  /* width: 280px; */
+
+}
+.figcaption{
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+  max-height: 100px;
+  background: #3ED0A0;
+  object-fit: contain;
+  overflow: hidden;
+}
+.parent-image {
+  /* background: #0000; */
 }
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-    width: 300px;
-    height: 180px;
+    width: 500px;
+    height: 250px; */
     /* make image corners round */
-    border-radius: 10px;
-    /* text-align: left; */
+    /* border-radius: 10px; */
+    /* border: 3px #231F20 solid; */
+    /* border-width: 200px; */
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+  
+    padding:10px;
+    /* border-color: black; */
 }
+
+
 
 
 
@@ -183,6 +198,7 @@ h1 {
 h2{
   font-size: 48px;
   color: #FEF7E5;
+
 }
 
 p{
@@ -197,19 +213,26 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #D03C3C;
-  color: #FFFFFF;
+  color: #BD0008;
   font-size: 22px;
   text-align: center;
   }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 809px) {
-/* Banner */
-  .banner{
-    display: flex;
-    padding: 0;
-    background-color: #FEF7E5;
-  }
+
+
+
+
+
+/* @media only screen
+and {
+  
+} */
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) 
+{
+Banner 
   #banner-image{
     margin: 0 auto;
     height: 106px;
@@ -226,7 +249,7 @@ footer {
   }
   .section3-search input{
     outline: none;
-    background: #FEF7E5;
+    background: white;
     width: 300px;
     height: 40px;
     line-height: 17px;
@@ -234,8 +257,6 @@ footer {
     border-radius: 10px;
   }
   .section3-search .search-bt{
-    text-align: center;
-    color: #fff;
     font-size: 14px;
     border-radius: 10px;
     height: 40px;
@@ -248,9 +269,7 @@ footer {
     margin: 8px;
     width: 300px;
     height: 400px; 
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    background-color: #3d9aed;
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc; 
     border-radius: 10px;
     /* if text-string is longer than set width...hide it */
     text-overflow: ellipsis;
@@ -265,9 +284,35 @@ footer {
     color: #231F20;
     /* padding: 0 20px 20px; */
   }
+  .search-results-item-urlToImage
+item img {
+  align-self: center;
+}
+h1.headline {
+  font-size: 20px;
+  width: 250px;
+}
+.search-results-item-urlToImage {
+    /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+    width: 300px;
+    height: 180px;
+    /* make image corners round */
+    border-radius: 10px;
+     text-align: left; 
+}
+
+
+
    /* About us */
   .section5-aboutUs{
     padding: 10px 10px;
     /* width: 100%; */
+  }
+  h2{
+    font-size: 24px;
+  }
+  p{
+    font-size: 14px;
+    width: 70%;
   }
 }
