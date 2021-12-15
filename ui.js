@@ -5,7 +5,7 @@
     // no argument function
 export const clearArticles = () => {
     //   reference from the list
-      const list = document.getElementsByClassName("search-results");
+      const list = document.getElementById("search-results");
       // remove child from list
         while (list.firstChild) {
             list.firstChild.remove();

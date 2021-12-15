@@ -96,12 +96,14 @@ input[type="checkbox"]{
 
 
 /* Cards/Search Results */
-.search-results{
+#search-results{
   /* side scroll feature */
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-
+    .search-results-items {
+      flex: 0 0 auto;
+    }
 
   margin: auto;
   padding: 80px 20px;
@@ -117,6 +119,7 @@ input[type="checkbox"]{
   text-align: left;
   /* if text-string is longer than set width...hide it */
   /* text-overflow: ellipsis; */
+  display: flex;
   flex-direction: column;
   /* margin: 8px; */
   height: 400px; 
@@ -128,9 +131,6 @@ input[type="checkbox"]{
   border: 3px #231F20 solid;
   /* background: #231F20; */
   
-}
-img.search-results-items{
-  background-color: #231F20;
 }
 .figcaption{
   font-weight: normal;
