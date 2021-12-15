@@ -5,7 +5,7 @@
     // no argument function
 export const clearArticles = () => {
     //   reference from the list
-      const list = document.getElementById("search-results");
+      const list = document.getElementsByClassName("search-results");
       // remove child from list
         while (list.firstChild) {
             list.firstChild.remove();
@@ -34,25 +34,26 @@ const createListItem = (title, description, urlToImage) => {
 
     // element for article image
     const posterNode = document.createElement('img');
+        posterNode.setAttribute('class', 'parent-image');
         // alternative text tool child for img element
         posterNode.setAttribute('alt', 'caption');
         // class to style img element
         posterNode.setAttribute('class', 'search-results-item-urlToImage');
-        // set the source attritube to add the urlToImage url
+        // set the source attritube to add the urlToImage urld
         posterNode.setAttribute('src', urlToImage); 
 
     // assemble/create figure node 
     const figureNode = document.createElement('figure');
-        // append the urlToImage node to figure
-        figureNode.appendChild(posterNode);
         // append the headline node to figue element
         figureNode.appendChild(headlineNode);
         // append the caption node to figure
         figureNode.appendChild(captionNode);
+        // append the urlToImage node to figure
+        figureNode.appendChild(posterNode);
         
 
     // create the actual list item
-    const listItemNode = document.createElement('item');
+    const listItemNode = document.createElement('items');
         // create class to style list item
         figureNode.setAttribute('class', 'search-results-items');
         // append figure node to list
