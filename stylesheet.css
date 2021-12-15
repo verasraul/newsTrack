@@ -110,15 +110,12 @@ input[type="checkbox"]{
   padding-bottom: 70px;
   gap: 20px;
 }
-
 /* Search resulst styling */
 .search-results-items {
   /* set width */
-  width: 400px;
+  /* width: 500px; */
   /* align text to center */
-  text-align: left;
-  /* if text-string is longer than set width...hide it */
-  /* text-overflow: ellipsis; */
+  text-align: center;
   display: flex;
   flex-direction: column;
   /* margin: 8px; */
@@ -126,50 +123,57 @@ input[type="checkbox"]{
   box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
   /* border: 1px solid #ccc; */
   border-radius: 10px;
+  border: 3px #231F20 solid;
   /* if text-string is longer than set width...hide it */
   text-overflow: ellipsis;
-  border: 3px #231F20 solid;
-  /* background: #231F20; */
+  background: #231F20;
+  /* background: #3ED0A0; */
   
+}
+.headline{
+  /* if text-string is longer than set width...hide it */
+  text-overflow: ellipsis;
+  display-over
+  font-weight:bold;
+  color: black;
+  /* padding: 0 20px 20px; */
+}
+h1 {
+  font-size: 20px;
+  text-align: right;
+  /* background: white; */
+  background: #3ED0A0;
+  width: 100%;
+  /* width: 280px; */
+
 }
 .figcaption{
   font-weight: normal;
+  text-align: center;
   padding: 0;
   max-height: 100px;
   background: #3ED0A0;
   object-fit: contain;
   overflow: hidden;
 }
-.headline{
-  font-weight:bold;
-  color: black;
-
-  /* padding: 0 20px 20px; */
-}
-h1 {
-  font-size: 20px;
-  background: #D03C3C;
-  width: 200px;
-  /* width: 280px; */
-
-}
 .parent-image {
-  background: #0000;
+  /* background: #0000; */
 }
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-    width: 300px;
-   /* height: 180px;*/
+    width: 500px;
+    height: 250px; */
     /* make image corners round */
     /* border-radius: 10px; */
     /* border: 3px #231F20 solid; */
     /* border-width: 200px; */
     /* justify-content: flex-end; */
-    /* align-items: flex-end; */
+    align-items: flex-end;
   
     padding:10px;
     /* border-color: black; */
 }
+
 
 
 

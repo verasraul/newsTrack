@@ -44,12 +44,13 @@ const createListItem = (title, description, urlToImage) => {
 
     // assemble/create figure node 
     const figureNode = document.createElement('figure');
+        // append the urlToImage node to figure
+        figureNode.appendChild(posterNode);
         // append the headline node to figue element
         figureNode.appendChild(headlineNode);
         // append the caption node to figure
         figureNode.appendChild(captionNode);
-        // append the urlToImage node to figure
-        figureNode.appendChild(posterNode);
+       
         
 
     // create the actual list item
