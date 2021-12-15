@@ -12,14 +12,6 @@
   --card4: #FAC360;
 }
 
-/* @font-face { 
-  font-family: '28_days_laterregular';
-  src: url('28_days_later-webfont.woff2') format('woff2'),
-       url('28_days_later-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 *{
   margin: 0px;
   padding: 0px;
@@ -47,45 +39,6 @@ display: flex;
 justify-content: space-around;
 width: 85%; 
 }
-
-/* Navigation bar */
-.section2-nav-bar{
-  display: flex;
-  width: 100%;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: #F22727;
-}
-
-.logo{
-  font-size: 35px;
-  /* font-family: '28_days_laterregular'; */
-  cursor: pointer;
-}
-nav ol{
-  display: flex;
-  list-style: none;
-  margin: auto 0;
-}
-nav ol li{
-  margin: 0 px;
-  font-weight: bold;
-}
-nav ol li a{
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  padding: 5px 10px;
-}
-nav ol li:hover a{
-  background: #fff;
-  color: #BD0008;
-} 
-
 
 /* Search */
 .section3-search{
@@ -136,11 +89,10 @@ input[type="checkbox"]{
   display: none;
 }
 
-
-/* FlashCards */
+/* Search Results */
 #section4-flashcards{
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: nowrap;
   /* justify-content: center; */
   /* align-items: center; */
   /* max-width: 80%; */
@@ -156,7 +108,6 @@ input[type="checkbox"]{
   display: flex;
   flex-flow: row wrap;
   /* justify-content: space-around; */
-
 }
 
 /* adding styling for 'li' items */
@@ -179,17 +130,6 @@ ul > li {
   padding-right: 20px;
 }
 
-/* 
-.card{
-  width: 300px;
-  height: 350px; 
-  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
-  background-color: #3d9aed;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}  */
 .search-results-item {
   /* set width */
   width: 300px;
@@ -198,11 +138,13 @@ ul > li {
   /* if text-string is longer than set width...hide it */
   text-overflow: ellipsis;
 }
+
 .search-results-item-urlToImage {
     /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
     width: 20%;
     height: 100%;
 }
+
 .search-results{
   margin: 0;
   padding: 0;
