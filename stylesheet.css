@@ -117,8 +117,8 @@ input[type="checkbox"]{
   /* flex-direction: row-reverse; */
   /* flex-direction: column; */
   /* set width */
-  width: 600px;
-  height: 90%; 
+  width: 400px;
+  height: 100%; 
   /* display: flex; */
   margin: 8px; 
   box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
@@ -164,7 +164,8 @@ h1 {
   /* text-overflow: clip; */
 }
 .figcaption{
-  width: 40%;
+  width: 220px;
+  height: 60%;
   float: left;
   padding: 15px;
   border: 1px solid red;
@@ -184,20 +185,23 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;  */
 }
-/* .search-results-item-urlToImage { */
-    
+.search-results-item-urlToImage {
+    /* make image corners round */
+    border-radius: 12px;
+    /* padding: 100px; */
     /* align-items: flex-end; */ 
     /* border: 3px #231F20 solid; */
-    /* border-width: 200px; */
+    /* border-width: 10px; */
     /* justify-content: flex-end; */
     /* padding:10px; */
     /* border-color: black; */
-/* } */
+}
 img {
-  width: 60%;
-  float: right;
-  /* padding: 15px; */
-  border: 1px solid red;
+  width: 160px;
+  height: 70%;
+  float: left;
+  border: solid white;
+  /* border: 1px solid white; */
 
   /* style image as a thumnail */
   /* border: 1px solid #ddd; */
@@ -205,14 +209,13 @@ img {
   /* padding: 5px; */
   /* width: 150px; */
 
-  /* make image corners round */
-  border-radius: 12px;
+
 
   /* create border around image */
   /* border: 1px solid white; */
 
   /* create space between image and border */
-  /* padding: 5px; */
+  /* padding: 10px; */
   
  
   /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
