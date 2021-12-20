@@ -22,7 +22,6 @@ body{
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #FEF7E5;
 }
 
 /* Banner */
@@ -30,7 +29,6 @@ body{
   display: flex;
   height: 100%;
   padding: 0;
-  background-color: #FEF7E5;
 }
 
 #banner-image{
@@ -49,18 +47,17 @@ width: 85%;
   margin: auto;
   gap: 10px;
   padding: 50px 10px;
+  width: 85%;
 }
 
 /* styling for search input field */
 .section3-search input{
   outline: none;
-  background: #FEF7E5;
   width: 817px;
   height: 57px;
   line-height: 57px;
   font-size: 20px;
   border-radius: 10px;
-  border-color: #231F20;
   box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
@@ -93,65 +90,80 @@ input[type="checkbox"]{
 
 
 
-
-/* Cards/Search Results */
+/* Cards/Search Results STARTS */
 #search-results{
   /* side scroll feature */
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: space-around; */
-}
+  overflow-x: auto;
+    .search-results-items{
+      flex: 0 0 auto;
+    }
 
+  margin: auto;
+  padding: 80px 20px;
+  padding-bottom: 70px;
+  gap: 20px;  
+}
 /* Search resulst styling */
 .search-results-items {
-  height: 100;
   /* set width */
-  width: 300px;
+  /* width: 500px; */
   /* align text to center */
   text-align: justify;
-  /* if text-string is longer than set width...hide it */
-  /* text-overflow: ellipsis; */
-}
-
-.search-results-item {
-  /* set width */
-  width: 300px;
-  /* align text to center */
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* margin: 8px; */
+  height: 400px;
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  border: 3px #231F20 solid;
   /* if text-string is longer than set width...hide it */
   text-overflow: ellipsis;
- 
-}
-.figcaption{
-  font-weight: normal;
-  padding: 0 20px 20px;
+  background: #231F20;
 }
 .headline{
+  /* if text-string is longer than set width...hide it */
+  text-overflow: ellipsis;
+  
   font-weight:bold;
   color: #231F20;
   /* padding: 0 20px 20px; */
 }
-.search-results-item-urlToImage
-item img {
-  align-self: center;
-}
 h1 {
   font-size: 20px;
+  text-align: right;
+  /* background: white; */
+  background: #3ED0A0;
+  width: 100%;
+  /* width: 280px; */
 }
-
-.search-results-item-urlToImage {
-    /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-    width: 20%;
-    height: 100%;
-}
-
-.search-results{
-  margin: 0;
+.figcaption{
+  font-weight: normal;
+  padding: 0 20px 20px;
+  text-align: center;
   padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  max-height: 100px;
+  background: #3ED0A0;
+  object-fit: contain;
+  overflow: hidden;
+}
+.parent-image {
+  /* background: #0000; */
+}
+.search-results-item-urlToImage {
+  /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+  width: 20%;
+  height: 250px; */
+    /* make image corners round */
+    /* border-radius: 10px; */
+    /* border: 3px #231F20 solid; */
+    /* border-width: 200px; */
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    padding:10px;
+    /* border-color: black; */
 }
 
 
@@ -172,41 +184,41 @@ h1 {
   padding: 50px 10px;
   width: 85%;
 }
-
 h2{
   font-size: 48px;
   color: #FEF7E5;
 }
-
-p{
+.para{
   font-size: 20px;
   color: #FEF7E5;
   width: 50%;
 }
 
 /* Footer */
-footer {
+footer  {
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #D03C3C;
-  color: #FFFFFF;
   font-size: 22px;
   text-align: center;
   }
+p{
+  color: #BD0008;
+}
+
+
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 809px) {
 /* Banner */
   .banner{
     display: flex;
     padding: 0;
-    background-color: #FEF7E5;
   }
   #banner-image{
     margin: 0 auto;
     height: 106px;
-    width: 375px;
+    width: 100%;
     display: flex; 
   }
   .section3-search{
@@ -219,7 +231,6 @@ footer {
   }
   .section3-search input{
     outline: none;
-    background: #FEF7E5;
     width: 300px;
     height: 40px;
     line-height: 17px;
@@ -242,7 +253,6 @@ footer {
     width: 300px;
     height: 400px; 
     box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    background-color: #3d9aed;
     /* border: 1px solid #ccc; */
     border-radius: 10px;
     /* if text-string is longer than set width...hide it */
@@ -260,7 +270,17 @@ footer {
   }
    /* About us */
   .section5-aboutUs{
+    padding: 10px 10px; 
+  }
+  h2{
+    font-size: 24px;
+  }
+  .para{
+    font-size: 14px;
     padding: 10px 10px;
-    /* width: 100%; */
+    width: auto;
+  }
+  p{
+    font-size: 14px;
   }
 }
