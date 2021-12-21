@@ -260,7 +260,7 @@ p{
 }
 
 /* Footer */
-footer {
+footer, .pp {
   height: 60px;
   display: flex;
   justify-content: center;
