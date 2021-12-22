@@ -3,7 +3,7 @@ dotenv.config();
 
 import { search } from "./api";
 import { appendArticles, clearArticles, setMessage } from "./ui";
-import { appendArticles, clearMovies, setMessage } from "./ui";import { appendArticles, clearMovies, setMessage } from "./ui";
+
 
 
 (() => {

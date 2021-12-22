@@ -19,7 +19,7 @@ const createListItem = (title, description, urlToImage) => {
     const caption = `${title}`;
     const headline = `${description}`;
 
-    // create element for the headline
+    // create element for the title
     const captionNode = document.createElement("figcaption");
         // append text tool child to the element of the caption
         captionNode.appendChild(document.createTextNode(caption));
