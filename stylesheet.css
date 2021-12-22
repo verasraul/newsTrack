@@ -22,7 +22,6 @@ body{
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #FEF7E5;
 }
 
 /* Banner */
@@ -30,7 +29,7 @@ body{
   display: flex;
   height: 100%;
   padding: 0;
-  background-color: #FEF7E5;
+
 }
 
 #banner-image{
@@ -54,7 +53,7 @@ width: 85%;
 /* styling for search input field */
 .section3-search input{
   outline: none;
-  background: #FEF7E5;
+  background: #fff;
   width: 817px;
   height: 57px;
   line-height: 57px;
@@ -70,6 +69,7 @@ width: 85%;
   font-size: 20px;
   background: #BD0008;
   border-radius: 10px;
+  
   height: 57px;
   width: 100px;
   font-weight: bold;
@@ -98,61 +98,135 @@ input[type="checkbox"]{
 #search-results{
   /* side scroll feature */
   display: flex;
-  flex-flow: row wrap;
-  /* justify-content: space-around; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+    .search-results-items {
+      flex: 0 0 auto;
+    }
+  
+  margin: auto;
+  padding: 80px 20px;
+  padding-bottom: 70px;
+  gap: 20px;
 }
 
 /* Search resulst styling */
 .search-results-items {
-  height: 100;
+
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
   /* set width */
-  width: 300px;
-  /* align text to center */
-  text-align: justify;
+  width: 400px;
+  height: 100%; 
+  /* display: flex; */
+  margin: 8px; 
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  border: 1px solid white;
+  border-radius: 10px;
+  border: 3px #231F20 solid;
   /* if text-string is longer than set width...hide it */
   /* text-overflow: ellipsis; */
+  background: #D03C3C;
+  
+}
+* {
+  box-sizing: border-box;
 }
 
-.search-results-item {
-  /* set width */
-  width: 300px;
-  /* align text to center */
-  text-align: center;
+.headline{
+  border: 1px solid red;
+  padding: 15px;
+  /* padding: 40px 20px 30px; */
+
+  float: left;
+  /* flex-direction: column; */
+
+  /* width: 25%; */
+
   /* if text-string is longer than set width...hide it */
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
+  font-weight:bold;
+  color: white;
  
 }
-.figcaption{
-  font-weight: normal;
-  padding: 0 20px 20px;
-}
-.headline{
-  font-weight:bold;
-  color: #231F20;
-  /* padding: 0 20px 20px; */
-}
-.search-results-item-urlToImage
-item img {
-  align-self: center;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 h1 {
-  font-size: 20px;
+  color: #FEF7E5;
+  font-size: 16px;
+  /* text-align: left; */
+  /* width: 100%; */
+  /* width: 280px; */
+  /* text-overflow: clip; */
+}
+.figcaption{
+  width: 220px;
+  height: 60%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+
+  font-weight: normal;
+  color: white;
+  /* padding: 0 20px 20px; */
+  /* max-height: 120px; */
+  /* background: #FEF7E5; */
+  object-fit: contain;
+  overflow:auto;
+  
+  /* Render text as an ellipsis (...): */
+  /* white-space: nowrap;
+  width: 200px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;  */
 }
 
 .search-results-item-urlToImage {
-    /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
-    width: 20%;
-    height: 100%;
+    /* make image corners round */
+    border-radius: 12px;
+    /* padding: 100px; */
+    /* align-items: flex-end; */ 
+    /* border: 3px #231F20 solid; */
+    /* border-width: 10px; */
+    /* justify-content: flex-end; */
+    /* padding:10px; */
+    /* border-color: black; */
+}
+img {
+  width: 160px;
+  height: 70%;
+  float: left;
+  border: solid white;
+  /* border: 1px solid white; */
+
+  /* style image as a thumnail */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 5px; */
+  /* padding: 5px; */
+  /* width: 150px; */
+
+
+
+  /* create border around image */
+  /* border: 1px solid white; */
+
+  /* create space between image and border */
+  /* padding: 10px; */
+  
+ 
+  /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+  /* width: 400px; */
+  /* width: 20px; */
+  /* height: 90%;  */
+  
+  
 }
 
-.search-results{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
+
 
 
 
@@ -176,6 +250,7 @@ h1 {
 h2{
   font-size: 48px;
   color: #FEF7E5;
+
 }
 
 p{
@@ -185,24 +260,31 @@ p{
 }
 
 /* Footer */
-footer {
+footer, .pp {
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #D03C3C;
-  color: #FFFFFF;
+  color: #BD0008;
   font-size: 22px;
   text-align: center;
   }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 809px) {
-/* Banner */
-  .banner{
-    display: flex;
-    padding: 0;
-    background-color: #FEF7E5;
-  }
+
+
+
+
+
+/* @media only screen
+and {
+  
+} */
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) 
+{
+Banner 
   #banner-image{
     margin: 0 auto;
     height: 106px;
@@ -219,7 +301,7 @@ footer {
   }
   .section3-search input{
     outline: none;
-    background: #FEF7E5;
+    background: white;
     width: 300px;
     height: 40px;
     line-height: 17px;
@@ -227,8 +309,6 @@ footer {
     border-radius: 10px;
   }
   .section3-search .search-bt{
-    text-align: center;
-    color: #fff;
     font-size: 14px;
     border-radius: 10px;
     height: 40px;
@@ -241,9 +321,7 @@ footer {
     margin: 8px;
     width: 300px;
     height: 400px; 
-    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    background-color: #3d9aed;
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc; 
     border-radius: 10px;
     /* if text-string is longer than set width...hide it */
     text-overflow: ellipsis;
@@ -258,9 +336,35 @@ footer {
     color: #231F20;
     /* padding: 0 20px 20px; */
   }
+  .search-results-item-urlToImage
+item img {
+  align-self: center;
+}
+h1.headline {
+  font-size: 20px;
+  width: 250px;
+}
+.search-results-item-urlToImage {
+    /* set width of poster img (ie. aspect ratio for poster from this API is 2-to-3  */
+    width: 300px;
+    height: 180px;
+    /* make image corners round */
+    border-radius: 10px;
+     text-align: left; 
+}
+
+
+
    /* About us */
   .section5-aboutUs{
     padding: 10px 10px;
     /* width: 100%; */
+  }
+  h2{
+    font-size: 24px;
+  }
+  p{
+    font-size: 14px;
+    width: 70%;
   }
 }
