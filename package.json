@@ -16,6 +16,7 @@
     "last 1 Chrome version"
   ],
   "scripts": {
-    "build": "parcel index.html"
+    "build": "parcel index.html",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }
