@@ -100,7 +100,6 @@ input[type="checkbox"]{
     .search-results-items{
       flex: 0 0 auto;
     }
-  
   margin: auto;
   padding: 30px 20px;
   padding-bottom: 70px;
@@ -245,7 +244,7 @@ h2{
   color: #FEF7E5;
 
 }
-.para{
+p{
   font-size: 20px;
   color: #FEF7E5;
   /* width: 60%; */
@@ -261,9 +260,6 @@ footer, .pp {
   font-size: 22px;
   text-align: center;
   }
-p{
-  color: #BD0008;
-}
 
 
 
