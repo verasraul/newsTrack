@@ -18,8 +18,8 @@
 
 ## 🔄 API 🔃
 This project utilizes the following APIs:
-| NEWSDATA API | Google Maps API  |
-| ----- | ------ |
+| NEWSDATA API | 
+| ----- | 
 | [![Newsdata logo](src/img/logos/newsdataioAPI-Logo-1.png)](https://newsdata.io/)   | 
 | With "NEWSDATA" API developers can get live breaking news or search historical news data for the past 2 years from 3000 sources using NewsData.io API. Collect the data in JSON or Excel Formats.  |  
 
