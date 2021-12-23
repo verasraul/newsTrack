@@ -1,7 +1,6 @@
 {
   "name": "newsTrack",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:verasraul/newsTrack.git",
   "author": "Raul Veras <verasraul@gmail.com>",
   "license": "MIT",
@@ -16,7 +15,6 @@
     "last 1 Chrome version"
   ],
   "scripts": {
-    "build": "parcel index.html",
-    "deploy": "npm run build && gh-pages -d build"
+    "build": "index.html"
   }
 }
