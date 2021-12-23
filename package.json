@@ -1,6 +1,7 @@
 {
   "name": "newsTrack",
   "version": "1.0.0",
+  "main": "index.js",
   "repository": "git@github.com:verasraul/newsTrack.git",
   "author": "Raul Veras <verasraul@gmail.com>",
   "license": "MIT",
@@ -15,6 +16,6 @@
     "last 1 Chrome version"
   ],
   "scripts": {
-    "build": "index.html"
+    "build": "parcel index.html"
   }
 }
