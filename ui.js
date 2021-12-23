@@ -14,22 +14,25 @@ export const clearArticles = () => {
 
 
 //   helper function to create list item
-const createListItem = (title, description, urlToImage) => {
+const createListItem = (title, description, urlToImage, url) => {
     // create constant to hold the caption of the image
     const caption = `${title}`;
     const headline = `${description}`;
+    // const headlineUrl = `${url}`;
 
-    // create element for the headline
+    // create element for the title
     const captionNode = document.createElement("figcaption");
         // append text tool child to the element of the caption
         captionNode.appendChild(document.createTextNode(caption));
         captionNode.setAttribute('class', 'figcaption');
 
     // create element for the headline
-    const headlineNode = document.createElement("h1");
+    const headlineNode = document.createElement("a");
         // append headline child to the element of the caption
         headlineNode.appendChild(document.createTextNode(headline));
         headlineNode.setAttribute('class', 'headline');
+        // set the source attritube to add the url to article 
+        headlineNode.setAttribute('href', url);
         
 
     // element for article image
@@ -39,7 +42,7 @@ const createListItem = (title, description, urlToImage) => {
         posterNode.setAttribute('alt', 'caption');
         // class to style img element
         posterNode.setAttribute('class', 'search-results-item-urlToImage');
-        // set the source attritube to add the urlToImage urld
+        // set the source attritube to add the urlToImage url
         posterNode.setAttribute('src', urlToImage); 
 
     // assemble/create figure node 
@@ -65,7 +68,7 @@ const createListItem = (title, description, urlToImage) => {
 };
 
 
-// create a function that accepts Articles array as an argument
+// create a function that accepts Articles(API) array as an argument
 export const appendArticles = (articles) => {
     // for each element grab the referenced list
     const list = document.getElementById("search-results");
@@ -75,7 +78,7 @@ export const appendArticles = (articles) => {
       // creat function to display fallback img when headLine titles don't retrieve post imgs
       // const headLinePoster = headLine.urlToImage && headLine.urlToImage != 'null' ?  headLine.urlToImage : FALLBACK_POSTER_URL;
       // create list-item-nodes passing keys/items from objects in JSON array (ie. response you get from API requests)
-      const listItemNode = createListItem(headLine.description, headLine.title, headLine.urlToImage);
+      const listItemNode = createListItem(headLine.description, headLine.title, headLine.urlToImage, headLine.url);
         // append list items for each element
         list.appendChild(listItemNode);
     });

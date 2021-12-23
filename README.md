@@ -2,14 +2,16 @@
 
 ### "The world in your hands"
 
-"NewsTrack" is a web-app where users can browse news from all around the nation based on geography. The data/information will be displayed to the users via flash cards on the screen. The flash cards will show random news headlines in a random order and every time the site is refreshed each card will have a state name to indicate the origin of publication/reports. A user will be able to swipe back and forth between flash cards to view information from different states if they'd like to and by clicking on the news headline the user will be taken to the source of the full article.
+"NewsTrack" is a web-app where users can browse news from all around the nation based on the topic of interests. The data/information will be displayed to the users via flash cards on the screen. The flash cards will show the most current news headlines in a random order. A user will be able to swipe back and forth between flash cards to view information from different sources, scroll up/down inside the flash cards to read through the headlines of each article and by clicking on the news headline, users will be taken to the source of the full article.
 
 
 ## 📌 Features 📌
-- CRUD Operations
-- Search feature (search news by city or zip-code)
+
+- Search feature (search news articles by topic).
 - View news reports from multiple sources in a single page.
-- View which geolocation headlines were reported from.
+- View/follow sources where articles were reported from.
+- Adaptive horizontal scrolling for search results.
+- Adaptive vertical scrolling for article results.
 
 
 ## 🖌️ Wireframe 🖌️
@@ -18,15 +20,18 @@
 
 ## 🔄 API 🔃
 This project utilizes the following APIs:
-| NEWSDATA API | Google Maps API  |
-| ----- | ------ |
-| [![Newsdata logo](src/img/logos/newsdataioAPI-Logo-1.png)](https://newsdata.io/)   | [![Google Maps logo](src/img/logos/google-maps1.png)](https://cloud.google.com/maps-platform/)  |
-| With "NEWSDATA" API developers can get live breaking news or search historical news data for the past 2 years from 3000 sources using NewsData.io API. Collect the data in JSON or Excel Formats.  |  Using Google Maps API we can create better experiences and improve operations with rich, detailed geospatial data, helpful mapping tools, and industry-leading reliability.   |
+| NEWS API | 
+| ----- | 
+| [![News API logo](src/img/logos/newsAPI.png)](https://newsapi.org/) | 
+| Search worldwide news with code. Locate articles and breaking news headlines from news sources and blogs across the web with our JSON API. News API is a simple HTTP REST API for searching and retrieving live articles from all over the web. |  
 
 
 ## 🗓 What's next? 💭
 These are some additional features we would like to add:
-- User Auth(Sign in/Sign up/Auth view)
+- CRUD Operations.
+- User Auth(Sign-in/Sign-up/Auth view).
+- Mutiples search views.
+- Add personalized home pages for subscribed users.
 - Add investor and customer portals. 
 - Add backgrounds to flash cards.
 - Add ability for users to curate headlines based on topics of interests. 
@@ -38,7 +43,7 @@ NewsTrack app was created with the help of these resources
 2. [Figma](https://www.figma.com/community)
 3. [High Fidelity Tutorial](https://www.youtube.com/watch?v=DLXgLazAYG0&ab_channel=RisingKirin)
 4. [InVision](https://www.invisionapp.com/)
-5. [NEWSDATA Docs](https://newsdata.io/docs)
+5. [News API Docs](https://newsapi.org/docs)
 
 
 ## 🌠 Team 🌠
