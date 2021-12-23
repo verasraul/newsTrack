@@ -29,7 +29,6 @@ body{
   display: flex;
   height: 100%;
   padding: 0;
-
 }
 
 #banner-image{
@@ -48,6 +47,7 @@ width: 85%;
   margin: auto;
   gap: 10px;
   padding: 50px 10px;
+  width: 85%;
 }
 
 /* styling for search input field */
@@ -59,7 +59,6 @@ width: 85%;
   line-height: 57px;
   font-size: 20px;
   border-radius: 10px;
-  border-color: #231F20;
   box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
@@ -96,18 +95,16 @@ input[type="checkbox"]{
 #search-results{
   /* side scroll feature */
   display: flex;
-  flex-wrap: nowrap;
+  flex-flow: row wrap;
   overflow-x: auto;
-    .search-results-items {
+    .search-results-items{
       flex: 0 0 auto;
     }
-  
   margin: auto;
   padding: 30px 20px;
   padding-bottom: 70px;
-  gap: 20px;
+  gap: 20px;  
 }
-
 /* Search resulst styling */
 .search-results-items {
   /* flex-direction: row-reverse; */
@@ -183,7 +180,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;  */
 }
-
 .search-results-item-urlToImage {
     /* make image corners round */
     height: 175px;
@@ -243,13 +239,11 @@ img {
   padding: 30px 60px;
   width: 85%;
 }
-
 h2{
   font-size: 48px;
   color: #FEF7E5;
 
 }
-
 p{
   font-size: 20px;
   color: #FEF7E5;
@@ -272,6 +266,8 @@ footer, .pp {
 
 
 
+
+
 /* @media only screen
 and {
   
@@ -285,7 +281,7 @@ Banner
   #banner-image{
     margin: 0 auto;
     height: 106px;
-    width: 375px;
+    width: 100%;
     display: flex; 
   }
   .section3-search{
@@ -319,8 +315,18 @@ Banner
 
    /* About us */
   .section5-aboutUs{
+    padding: 10px 10px; 
+  }
+  h2{
+    font-size: 24px;
+  }
+  .para{
+    font-size: 14px;
     padding: 10px 10px;
-    /* width: 100%; */
+    width: auto;
+  }
+  p{
+    font-size: 14px;
   }
   h2{
     font-size: 24px;
