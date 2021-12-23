@@ -20,7 +20,7 @@
 This project utilizes the following APIs:
 | NEWS API | 
 | ----- | 
-| [![News API logo](src/img/logos/newsAPI.png)](https://newsapi.org/)   | 
+|       [![News API logo](src/img/logos/newsAPI.png)](https://newsapi.org/)   | 
 | Search worldwide news with code. Locate articles and breaking news headlines from news sources and blogs across the web with our JSON API. News API is a simple HTTP REST API for searching and retrieving live articles from all over the web. |  
 
 
