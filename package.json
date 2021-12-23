@@ -16,7 +16,6 @@
     "last 1 Chrome version"
   ],
   "scripts": {
-    // "start": "parcel index.html",
     "build": "parcel index.html"
   }
 }
