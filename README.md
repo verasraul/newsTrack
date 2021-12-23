@@ -28,8 +28,9 @@ This project utilizes the following APIs:
 
 ## 🗓 What's next? 💭
 These are some additional features we would like to add:
-- CRUD Operations
-- User Auth(Sign-in/Sign-up/Auth view)
+- CRUD Operations.
+- User Auth(Sign-in/Sign-up/Auth view).
+- Mutiples search views.
 - Add personalized home pages for subscribed users.
 - Add investor and customer portals. 
 - Add backgrounds to flash cards.
